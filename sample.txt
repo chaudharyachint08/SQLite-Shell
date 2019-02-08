@@ -1,0 +1,26 @@
+======== RESTART: C:\Users\Achint\Desktop\SQLite3 interpreter.py ========
+Enter the Actual path of DataBase
+file.db
+
+#1. NULL : NoneType Means “know nothing about it”
+#2. INTEGER : int Integers
+#3. REAL : float 8-byte floating-point numbers
+#4. TEXT : str Strings of characters
+#5. BLOB : bytes Binary data
+
+SQL>create table student(name text,roll_no int,marks float,dob date)
+SQL>insert into student values('Achint',1406410002,86.8,'1997-01-08')
+SQL>insert into student values('Udit',1406410002,92.8,'1999-07-15')
+SQL>insert into student values('Raju',1406410002,84.8,'1995-11-16')
+SQL>select name,roll_no from student
+Achint|1406410002|
+Udit  |1406410002|
+Raju  |1406410002|
+SQL>select * from student order by name
+Achint|1406410002|86.8|19970108|
+Raju  |1406410002|84.8|19951116|
+Udit  |1406410002|92.8|19990715|
+SQL>select * from student where marks between 80 and 90
+Achint|1406410002|86.8|19970108|
+Raju  |1406410002|84.8|19951116|
+SQL>
